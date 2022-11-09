@@ -245,3 +245,4 @@ DIAG_COORD_DEF_Z = "FILE:vcoord.nc,interfaces=st_edges_ocean"
 DIAG_COORD_DEF_RHO2 = "FILE:diag_rho2.nc,interfaces=rho2"
 
 BAD_VAL_SST_MIN = -3.0
+BAD_VAL_SSS_MAX = 60.0
