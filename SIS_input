@@ -13,9 +13,9 @@ DO_ICEBERGS = False
 ICE_STATS_INTERVAL = 0.25
 
 NIGLOBAL = 3600
-NJGLOBAL = 845
-LAYOUT = 72,17
-MASKTABLE = "masks/mask_table.262.72x17"
+NJGLOBAL = 2700
+LAYOUT = 80,75
+MASKTABLE = "mask_table.1585.80x75"
 
 GRID_CONFIG = "mosaic"
 GRID_FILE = "ocean_hgrid.nc"
