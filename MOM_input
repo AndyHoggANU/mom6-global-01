@@ -246,3 +246,4 @@ DIAG_COORD_DEF_Z = "FILE:vcoord.nc,interfaces=st_edges_ocean"
 
 BAD_VAL_SST_MIN = -3.0
 BAD_VAL_SSS_MAX = 60.0
+IGNORE_FLUXES_OVER_LAND = True
