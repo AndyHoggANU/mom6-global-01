@@ -39,6 +39,8 @@ RESTART_CHECKSUMS_REQUIRED = False
 NIGLOBAL = 3600
 NJGLOBAL = 2700
 
+TRIPOLAR_N = True
+
 LAYOUT = 80,75
 IO_LAYOUT = 1,1
 
@@ -58,9 +60,6 @@ TOPO_FILE = "ocean_topog.nc"
 
 MINIMUM_DEPTH = 9.5
 MAXIMUM_DEPTH = 6000.0
-
-! sponges
-SPONGE = False
 
 ! === module MOM_coord_initialization ===
 ! don't define layers in ALE mode
@@ -184,29 +183,76 @@ INT_TIDE_DISSIPATION = False
 
 ! === MOM_kappa_shear ===
 USE_JACKSON_PARAM = True
-!MAX_RINO_INT = 25
+MAX_RINO_INT = 25
 
 ! === module MOM_energetic_PBL ===
-EPBL_MSTAR_SCHEME = "OM4"
-MSTAR = 0.0
-MIX_LEN_EXPONENT = 1.0
-MSTAR_CAP = 10.0
-MSTAR_CONV_ADJ = 0.667
-MSTAR2_COEF1 = 0.29
-MSTAR2_COEF2 = 0.152
-NSTAR = 0.06
-TKE_DECAY = 0.01
-ML_OMEGA_FRAC = 0.001
-USE_MLD_ITERATION = True
-EPBL_TRANSITION_SCALE = 0.01
-USE_LA_LI2016 = True
-EPBL_LANGMUIR_SCHEME = "ADDITIVE"
-LT_ENHANCE_COEF = 0.044
-LT_ENHANCE_EXP = -1.5
-LT_MOD_LAC1 = 0.0
-LT_MOD_LAC4 = 0.0
-LT_MOD_LAC5 = 0.22
-!EPBL_USTAR_MIN = 1.45842E-18
+ML_OMEGA_FRAC = 0.001           !   [nondim] default = 0.0
+                                ! When setting the decay scale for turbulence, use this fraction of the absolute
+                                ! rotation rate blended with the local value of f, as sqrt((1-of)*f^2 +
+                                ! of*4*omega^2).
+TKE_DECAY = 0.01                !   [nondim] default = 2.5
+                                ! TKE_DECAY relates the vertical rate of decay of the TKE available for
+                                ! mechanical entrainment to the natural Ekman depth.
+EPBL_MSTAR_SCHEME = "OM4"       ! default = "CONSTANT"
+                                ! EPBL_MSTAR_SCHEME selects the method for setting mstar.  Valid values are:
+                                !    CONSTANT   - Use a fixed mstar given by MSTAR
+                                !    OM4        - Use L_Ekman/L_Obukhov in the sabilizing limit, as in OM4
+                                !    REICHL_H18 - Use the scheme documented in Reichl & Hallberg, 2018.
+MSTAR_CAP = 10.0                !   [nondim] default = -1.0
+                                ! If this value is positive, it sets the maximum value of mstar allowed in ePBL.
+                                ! (This is not used if EPBL_MSTAR_SCHEME = CONSTANT).
+MSTAR2_COEF1 = 0.29             !   [nondim] default = 0.3
+                                ! Coefficient in computing mstar when rotation and stabilizing effects are both
+                                ! important (used if EPBL_MSTAR_SCHEME = OM4).
+MSTAR2_COEF2 = 0.152            !   [nondim] default = 0.085
+                                ! Coefficient in computing mstar when only rotation limits the total mixing
+                                ! (used if EPBL_MSTAR_SCHEME = OM4)
+NSTAR = 0.06                    !   [nondim] default = 0.2
+                                ! The portion of the buoyant potential energy imparted by surface fluxes that is
+                                ! available to drive entrainment at the base of mixed layer when that energy is
+                                ! positive.
+EPBL_MLD_BISECTION = True       !   [Boolean] default = True
+                                ! If true, use bisection with the iterative determination of the self-consistent
+                                ! mixed layer depth.  Otherwise use the false position after a maximum and
+                                ! minimum bound have been evaluated and the returned value or bisection before
+                                ! this.
+MSTAR_CONV_ADJ = 0.667          !   [nondim] default = 0.0
+                                ! Coefficient used for reducing mstar during convection due to reduction of
+                                ! stable density gradient.
+USE_MLD_ITERATION = True        !   [Boolean] default = False
+                                ! A logical that specifies whether or not to use the distance to the bottom of
+                                ! the actively turbulent boundary layer to help set the EPBL length scale.
+EPBL_TRANSITION_SCALE = 0.01    !   [nondim] default = 0.1
+                                ! A scale for the mixing length in the transition layer at the edge of the
+                                ! boundary layer as a fraction of the boundary layer thickness.
+MIX_LEN_EXPONENT = 1.0          !   [nondim] default = 2.0
+                                ! The exponent applied to the ratio of the distance to the MLD and the MLD depth
+                                ! which determines the shape of the mixing length. This is only used if
+                                ! USE_MLD_ITERATION is True.
+USE_LA_LI2016 = True            !   [nondim] default = False
+                                ! A logical to use the Li et al. 2016 (submitted) formula to determine the
+                                ! Langmuir number.
+EPBL_LANGMUIR_SCHEME = "ADDITIVE" ! default = "NONE"
+                                ! EPBL_LANGMUIR_SCHEME selects the method for including Langmuir turbulence.
+                                ! Valid values are:
+                                !    NONE     - Do not do any extra mixing due to Langmuir turbulence
+                                !    RESCALE  - Use a multiplicative rescaling of mstar to account for Langmuir
+                                !      turbulence
+                                !    ADDITIVE - Add a Langmuir turblence contribution to mstar to other
+                                !      contributions
+LT_ENHANCE_COEF = 0.044         !   [nondim] default = 0.447
+                                ! Coefficient for Langmuir enhancement of mstar
+LT_ENHANCE_EXP = -1.5           !   [nondim] default = -1.33
+                                ! Exponent for Langmuir enhancementt of mstar
+LT_MOD_LAC1 = 0.0               !   [nondim] default = -0.87
+                                ! Coefficient for modification of Langmuir number due to MLD approaching Ekman
+                                ! depth.
+LT_MOD_LAC4 = 0.0               !   [nondim] default = 0.95
+                                ! Coefficient for modification of Langmuir number due to ratio of Ekman to
+                                ! stable Obukhov depth.
+LT_MOD_LAC5 = 0.22              !   [nondim] default = 0.95
+                                ! Coefficient for modification of Langmuir number due to ratio of Ekman to
+                                ! unstable Obukhov depth.
 
 ! === module MOM_trace_advect ===
 TRACER_ADVECTION_SCHEME = "PPM:H3"

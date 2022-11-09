@@ -1,8 +1,8 @@
 format: yamanifest
 version: 1.0
 ---
-work/symmetric_FMS2-9bc3419a:
-  fullpath: /g/data/x77/ahg157/exes/MOM6_SIS2/symmetric_FMS2-9bc3419a
+work/MOM6:
+  fullpath: /home/157/ahg157/repos/mom6/build/ice_ocean_SIS2_symmetric/MOM6
   hashes:
-    binhash: 21daf068d9544274bf5d7f941461205a
-    md5: b8da8f6b858958acc65581114f40f1ef
+    binhash: ed5644fdd118a1361037cfbd6980eba1
+    md5: 28a0c9af1e988dbaefecaef744df1970
