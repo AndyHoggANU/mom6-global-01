@@ -84,8 +84,8 @@ work/INPUT/RYF.runoff_all.2003_2004.nc:
 work/INPUT/RYF.runoff_global-01.1990_1991.nc:
   fullpath: /g/data/x77/ahg157/inputs/mom6/global-01/RYF.runoff_global-01.1990_1991.nc
   hashes:
-    binhash: ab24ab590103b314de49ec64d06b98c7
-    md5: 032d638f287dbfccbf3d9360926df3eb
+    binhash: ba5fce0f84984f8988a4047600784b0b
+    md5: 788ffc5855a92e87d47d50484a3504c0
 work/INPUT/RYF.slp.1984_1985.nc:
   fullpath: /g/data/ik11/inputs/JRA-55/RYF/v1-3/RYF.slp.1984_1985.nc
   hashes:
