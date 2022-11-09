@@ -12,10 +12,14 @@ model: mom6
 input:
     - /g/data/x77/ahg157/inputs/mom6/global-01/
     - /g/data/ik11/inputs/JRA-55/RYF/v1-3/
+# panan executable
 #exe: /g/data/ik11/inputs/mom6/bin/symmetric_FMS2-e7d09b7
+# panan debug
 #exe: /g/data/x77/ahg157/exes/MOM6_SIS2/symmetric_FMS2-9bc3419a
-#exe: /home/157/ahg157/repos/mom6/build/ice_ocean_SIS2_symmetric/MOM6
-exe: /home/157/ahg157/repos/mom6/build/ice_ocean_SIS2_symmetric_debug/MOM6
+# current main, same issue
+exe: /home/157/ahg157/repos/mom6/build/ice_ocean_SIS2_symmetric/MOM6
+# debug executable, seems to hang?
+#exe: /home/157/ahg157/repos/mom6/build/ice_ocean_SIS2_symmetric_debug/MOM6
 
 collate: false
 runlog: true
