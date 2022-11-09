@@ -166,6 +166,11 @@ work/INPUT/atmos_mosaic_tile1Xocean_mosaic_tile1.nc:
   hashes:
     binhash: 4f16677105c285904ad5cd08d51b5389
     md5: 800874cae2d5c30ad4115f35e75592d7
+work/INPUT/diag_rho2.nc:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/global-01/diag_rho2.nc
+  hashes:
+    binhash: ca3128cba2b14eac5bf392c4e066e218
+    md5: 2e28890e50220397a167a2b3c4a30271
 work/INPUT/grid_spec.nc:
   fullpath: /g/data/x77/ahg157/inputs/mom6/global-01/grid_spec.nc
   hashes:
