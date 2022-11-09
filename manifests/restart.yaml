@@ -1,3 +1,108 @@
 format: yamanifest
 version: 1.0
---- {}
+---
+work/INPUT/MOM.res.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res.nc
+  hashes:
+    binhash: f0462f2382900afbca0ccbece3017ec0
+    md5: 5f3bc9ab0493ca02bdd14e22c04fcf47
+work/INPUT/MOM.res_1.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_1.nc
+  hashes:
+    binhash: a05e8836b891e5a2205a2e1b206b6083
+    md5: 74616a4183cda385cfc27d9c5c81d0e7
+work/INPUT/MOM.res_10.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_10.nc
+  hashes:
+    binhash: 4e8714de71016dd67fba4f56edada496
+    md5: c28529babff9a6c991eab9b6a3bd0594
+work/INPUT/MOM.res_11.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_11.nc
+  hashes:
+    binhash: 69ac1ff44fc99ddcf416b8d1463731fd
+    md5: 9b68e119388765309b07ca57a56c0f53
+work/INPUT/MOM.res_12.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_12.nc
+  hashes:
+    binhash: 94e7c888eb63afe85d775e8bfdc6bd36
+    md5: e0d0ad53d29f65baeb2eafa8d073c3af
+work/INPUT/MOM.res_13.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_13.nc
+  hashes:
+    binhash: 3092d5cff68efa080d85d776d7d17b11
+    md5: d39dc320f6b2b0e063e555eafb731f5e
+work/INPUT/MOM.res_14.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_14.nc
+  hashes:
+    binhash: 0868721752c7fe6911e87cddf5a11dc7
+    md5: 462d4a34dcf905840e42d221bf5ed1b8
+work/INPUT/MOM.res_15.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_15.nc
+  hashes:
+    binhash: 61c247ec435ec2dc069110aaac12ea2c
+    md5: a587b7c4d4695bbf5451fccf9501b081
+work/INPUT/MOM.res_16.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_16.nc
+  hashes:
+    binhash: 3a08d1aad6aad07de1e9ef48dd2ec9c8
+    md5: ffa9e81dd1ecf48f674f4d68b3f9ff74
+work/INPUT/MOM.res_2.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_2.nc
+  hashes:
+    binhash: 3d11535c8e4248f6fcfe752021a14a3b
+    md5: eb14869a39c59219bf931720ec9aac2f
+work/INPUT/MOM.res_3.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_3.nc
+  hashes:
+    binhash: dc6574bac7146bf7be3b864116527a75
+    md5: f37dc4d3408c379153bbaf05f35a3504
+work/INPUT/MOM.res_4.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_4.nc
+  hashes:
+    binhash: 94da95379a33b7d0fc6e9315a1be28cf
+    md5: a2b3db036edd57ea1cd5239730d56d9b
+work/INPUT/MOM.res_5.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_5.nc
+  hashes:
+    binhash: 8bc16f18ab6ce460fb6d85378fac67f9
+    md5: 32c8d5d8828e6eeb24770285f8e180d4
+work/INPUT/MOM.res_6.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_6.nc
+  hashes:
+    binhash: 00db5613e334359031982fa4c233aac2
+    md5: d8304905ae771fc100b708800ff7cf98
+work/INPUT/MOM.res_7.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_7.nc
+  hashes:
+    binhash: 57b1eb29e0ab389a77cfddaf648715b3
+    md5: 5f4a1fa633ded19bf82eb929f7f079b6
+work/INPUT/MOM.res_8.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_8.nc
+  hashes:
+    binhash: 19e94f30e48e2fc64cddf64147313518
+    md5: 32bd0e94a5242b074f9defcb1e3a0cfd
+work/INPUT/MOM.res_9.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/MOM.res_9.nc
+  hashes:
+    binhash: 5d78cea7da055a2427df15900c68e7ef
+    md5: 83f14fd2a1792365b6071436ec1cd37f
+work/INPUT/coupler.res:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/coupler.res
+  hashes:
+    binhash: 59e2e19dfeac77452ce6decd130bfc76
+    md5: 494a08b45556d64bf6a11711db452419
+work/INPUT/ice_model.res.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/ice_model.res.nc
+  hashes:
+    binhash: e23f5eaee3809b939517e07597953ce1
+    md5: 223308576e4d50b0dd8989ea459ed377
+work/INPUT/ice_model.res_1.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/ice_model.res_1.nc
+  hashes:
+    binhash: 348db921438022b8316c1a216c8f9b8e
+    md5: 3a94ca0542f939c65cedb124e17d82a6
+work/INPUT/ice_model.res_2.nc:
+  fullpath: /scratch/x77/amh157/mom6/archive/global-01/restart000/ice_model.res_2.nc
+  hashes:
+    binhash: 5abc2ebfd7c08efe1a474df9c2021fbf
+    md5: bd547a9b8d1e7e63904838384aa7b633
