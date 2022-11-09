@@ -210,7 +210,7 @@ NSTAR = 0.06                    !   [nondim] default = 0.2
                                 ! The portion of the buoyant potential energy imparted by surface fluxes that is
                                 ! available to drive entrainment at the base of mixed layer when that energy is
                                 ! positive.
-EPBL_MLD_BISECTION = True       !   [Boolean] default = True
+EPBL_MLD_BISECTION = False       !   [Boolean] default = True
                                 ! If true, use bisection with the iterative determination of the self-consistent
                                 ! mixed layer depth.  Otherwise use the false position after a maximum and
                                 ! minimum bound have been evaluated and the returned value or bisection before
