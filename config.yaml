@@ -12,7 +12,8 @@ model: mom6
 input:
     - /g/data/x77/ahg157/inputs/mom6/global-01/
     - /g/data/ik11/inputs/JRA-55/RYF/v1-3/
-exe: /g/data/ik11/inputs/mom6/bin/symmetric_FMS2-e7d09b7
+#exe: /g/data/ik11/inputs/mom6/bin/symmetric_FMS2-e7d09b7
+exe: /g/data/x77/ahg157/exes/MOM6_SIS2/symmetric_FMS2-9bc3419a
 
 collate: false
 runlog: true

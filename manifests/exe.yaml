@@ -1,8 +1,8 @@
 format: yamanifest
 version: 1.0
 ---
-work/symmetric_FMS2-e7d09b7:
-  fullpath: /g/data/ik11/inputs/mom6/bin/symmetric_FMS2-e7d09b7
+work/symmetric_FMS2-9bc3419a:
+  fullpath: /g/data/x77/ahg157/exes/MOM6_SIS2/symmetric_FMS2-9bc3419a
   hashes:
-    binhash: 9af7f846b945727eb837abe95c5bab6a
-    md5: bfde64d72a5dc9ca2003c0fe55f6e751
+    binhash: 21daf068d9544274bf5d7f941461205a
+    md5: b8da8f6b858958acc65581114f40f1ef
