@@ -196,6 +196,11 @@ work/INPUT/mask_table.1585.80x75:
   hashes:
     binhash: 3c27f9f770456376f3d9f4883cc25457
     md5: 981beb69ead0973c30b5367882390417
+work/INPUT/mask_table.1658.80x75:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/global-01/mask_table.1658.80x75
+  hashes:
+    binhash: 46afc45c182d2d90bf71b1c930508d60
+    md5: 6507eeb38ce7ec9a56eb6e44a1d60252
 work/INPUT/ocean740_filled.nc:
   fullpath: /g/data/x77/ahg157/inputs/mom6/global-01/ocean740_filled.nc
   hashes:
