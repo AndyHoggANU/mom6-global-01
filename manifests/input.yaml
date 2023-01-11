@@ -221,6 +221,11 @@ work/INPUT/ocean_mosaic.nc:
   hashes:
     binhash: e2b2f1cd5380d6da4f9a2f86c19c16c4
     md5: 029ff19c9dec17ce59587d6d01347c34
+work/INPUT/ocean_temp_salt.access.nc:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/global-01/ocean_temp_salt.access.nc
+  hashes:
+    binhash: 398a3583223dd177dcabe09b42c27834
+    md5: 7e3671bdd8e1732b55eb3f9eeb5f614a
 work/INPUT/ocean_topog.nc:
   fullpath: /g/data/x77/ahg157/inputs/mom6/global-01/ocean_topog.nc
   hashes:

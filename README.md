@@ -6,3 +6,5 @@ and restart files. . This repository
 contains the model configurations, and the scripts required to
 generate the input forcing.
 
+This is the second version of this simulation, starting from WOA initial
+conditions rather than ACCESS-OM2.
