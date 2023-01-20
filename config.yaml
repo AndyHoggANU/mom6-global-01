@@ -28,4 +28,5 @@ mpi:
   module: openmpi/4.1.2
 
 userscripts:
+  error: resub.sh
   archive: qsub sync_output_to_gdata.sh
