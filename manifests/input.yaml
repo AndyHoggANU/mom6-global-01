@@ -176,11 +176,56 @@ work/INPUT/diag_rho2.nc:
   hashes:
     binhash: ca3128cba2b14eac5bf392c4e066e218
     md5: 2e28890e50220397a167a2b3c4a30271
+work/INPUT/forcing/eta_init.nc:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/forcing/eta_init.nc
+  hashes:
+    binhash: abedb2fbe8ad7e1456aa72d77cba6097
+    md5: ca19c5442e9a274d6a063e5980f261e0
+work/INPUT/forcing/eta_init_panan.nc:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/forcing/eta_init_panan.nc
+  hashes:
+    binhash: 5260ce401431ba27479108c1e9ac5202
+    md5: 092d13a09b49a1fc3960411606c37fdf
+work/INPUT/forcing/forcing_obc.nc:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/forcing/forcing_obc.nc
+  hashes:
+    binhash: b17484497e437608a33eab70a0483bf7
+    md5: 0f90ece1f7d98347779369c5408b779c
+work/INPUT/forcing/forcing_obc_shifted.nc:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/forcing/forcing_obc_shifted.nc
+  hashes:
+    binhash: 5b0d1e58bbae2c22156e462e4f0c10ae
+    md5: 33fd9c0950d4f27066c3a44e2bf35599
+work/INPUT/forcing/ocean_daily.nc:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/forcing/ocean_daily.nc
+  hashes:
+    binhash: 61765719fc3f8db7c8be3c5502a661b9
+    md5: 2129106b87e2dd08368c8a8e84458a58
+work/INPUT/forcing/temp_salt_init_z.nc:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/forcing/temp_salt_init_z.nc
+  hashes:
+    binhash: b9e9d5ebbb183c39e4036a1b8774b672
+    md5: 15b78def5d1f2d5f5ce2de80ea200352
+work/INPUT/forcing/temp_salt_init_z_0025.nc:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/forcing/temp_salt_init_z_0025.nc
+  hashes:
+    binhash: 2b15415b797e2f8f765038a5d2247a53
+    md5: 24088e849324198e8bc02c848eb57098
 work/INPUT/grid_spec.nc:
   fullpath: /g/data/x77/ahg157/inputs/mom6/global-01/grid_spec.nc
   hashes:
     binhash: 9b7a369a5778d28528fed11861b1625a
     md5: ef84048ed9d44d7319ca9a40c033aab7
+work/INPUT/hycom1_75_800m.nc:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/hycom1_75_800m.nc
+  hashes:
+    binhash: ac28072dd366757af7a1a6d201174e8b
+    md5: 023b23f6b55e6f3b3de6778e608d0d3d
+work/INPUT/hycom1_panant.nc:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/hycom1_panant.nc
+  hashes:
+    binhash: fe6c0ad093465be972c4d77e021766f0
+    md5: 15dcc7048ed27e05e1a2d7d64dc4b235
 work/INPUT/land_mask.nc:
   fullpath: /g/data/x77/ahg157/inputs/mom6/global-01/land_mask.nc
   hashes:
@@ -201,6 +246,31 @@ work/INPUT/mask_table.1658.80x75:
   hashes:
     binhash: 46afc45c182d2d90bf71b1c930508d60
     md5: 6507eeb38ce7ec9a56eb6e44a1d60252
+work/INPUT/masks/mask_table.180.60x14:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/masks/mask_table.180.60x14
+  hashes:
+    binhash: 9b1c2db8902e08145906ef9e63688404
+    md5: 0070013067c69f967b342269e39a104c
+work/INPUT/masks/mask_table.262.72x17:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/masks/mask_table.262.72x17
+  hashes:
+    binhash: 05824265d788ea82a98b3b2d60238be0
+    md5: 42db5287a23f3105c1e917d60136106b
+work/INPUT/masks/mask_table.426.90x21:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/masks/mask_table.426.90x21
+  hashes:
+    binhash: 4b1e8344510c5b6bb223a9d4198d5988
+    md5: f7bd11fb9e2decf135e4fa9973460ebb
+work/INPUT/masks/mask_table.554.102x24:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/masks/mask_table.554.102x24
+  hashes:
+    binhash: 7d0d99ba073db982c58b5196b8e7d7d3
+    md5: d8f6f774dadee5f37187b9bc60712b5b
+work/INPUT/masks/mask_table.563.102x24:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/masks/mask_table.563.102x24
+  hashes:
+    binhash: bc71f95af299e125a0dbf29ad47a5748
+    md5: f34946b1656e1eb79134ad1410ee5a84
 work/INPUT/ocean740_filled.nc:
   fullpath: /g/data/x77/ahg157/inputs/mom6/global-01/ocean740_filled.nc
   hashes:
@@ -231,6 +301,16 @@ work/INPUT/ocean_topog.nc:
   hashes:
     binhash: 36ea1242d02a43f02e9ad7253793f976
     md5: 02de496988a6c3dc33ffa941c811e57d
+work/INPUT/sponges/idamp_1deg_10d_linear.nc:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/sponges/idamp_1deg_10d_linear.nc
+  hashes:
+    binhash: c294175e2de238ac850838bfac559923
+    md5: 641cf57844fd8117681f8635dada106d
+work/INPUT/sponges/sponge_uvts.nc:
+  fullpath: /g/data/x77/ahg157/inputs/mom6/panan-01/sponges/sponge_uvts.nc
+  hashes:
+    binhash: e5f9fd642d8ee1238017bb571a420d86
+    md5: fbe68772cdd71ff4be93b632d3a8f53f
 work/INPUT/vcoord.nc:
   fullpath: /g/data/x77/ahg157/inputs/mom6/global-01/vcoord.nc
   hashes:
